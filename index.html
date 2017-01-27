@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>Together Group</title>
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+
+<style>
+	
+	html, body {
+		padding: 0;
+		margin: 0;
+        height: 100%;
+	}
+    .box {
+      animation: colorchange 20s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 20s infinite; /* Chrome and Safari */
+		height: 100%;
+        -moz-box-sizing:    border-box;
+         -webkit-box-sizing: border-box;
+         -ms-box-sizing:     border-box;
+          box-sizing:        border-box;
+          border: 20px solid #FFF;
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #FFC8C8;}
+      25%  {background: #FDFFC8;}
+      50%  {background: #C8FFC9;}
+      75%  {background: #C8FBFF;}
+      100% {background: #E8C8FF;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #FFC8C8;}
+      25%  {background: #FDFFC8;}
+      50%  {background: #C8FFC9;}
+      75%  {background: #C8FBFF;}
+      100% {background: #E8C8FF;}
+    }
+    .v-align {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #together {
+        text-align: center;
+    }
+    #together img {
+        max-width: 650px;
+        margin: auto;
+    }
+	p{
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	font-weight: 100;
+		color: #333;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+	
+	<div id="together" class="v-align">
+	    <img src="http://tommy-boy.co.uk/tg/TG/Together.png" width="70%">
+	    <p>The Together Group Limited</p>
+    </div>
+
+</div>
+</body>
+</html>
